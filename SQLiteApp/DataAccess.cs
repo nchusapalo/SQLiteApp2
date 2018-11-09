@@ -12,7 +12,7 @@ namespace SQLiteApp
         public static void InitializeDatabase()
         {
             using (SqliteConnection db =
-                new SqliteConnection("Filename=sqliteSample1.db"))
+                new SqliteConnection("Filename=customerNames.db"))
             {
                 db.Open();
 
@@ -29,7 +29,7 @@ namespace SQLiteApp
         public static void AddData(string inputText)
         {
             using (SqliteConnection db =
-                new SqliteConnection("Filename=sqliteSample1.db"))
+                new SqliteConnection("Filename=customerNames.db"))
             {
                 db.Open();
 
@@ -51,7 +51,7 @@ namespace SQLiteApp
             List<String> entries = new List<string>();
 
             using (SqliteConnection db =
-                new SqliteConnection("Filename=sqliteSample1.db"))
+                new SqliteConnection("Filename=customerNames.db"))
             {
                 db.Open();
 
